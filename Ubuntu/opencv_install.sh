@@ -7,18 +7,18 @@
 # dldir - the download directory (optional, if not specified creates an OpenCV directory in the working dir)
 if [[ -z "$version" ]]; then
     echo "Please define version before calling `basename $0` or use a wrapper like opencv_latest.sh"
-    exit 1
+#     exit 1
 fi
 if [[ -z "$downloadfile" ]]; then
     echo "Please define downloadfile before calling `basename $0` or use a wrapper like opencv_latest.sh"
-    exit 1
+#     exit 1
 fi
 if [[ -z "$dldir" ]]; then
     dldir=OpenCV
 fi
 if ! sudo true; then
     echo "You must have root privileges to run this script."
-    exit 1
+#     exit 1
 fi
 set -e
 
